@@ -4,9 +4,37 @@ import LinkedInIcon from "../assets/icons/linkedin.svg";
 import InstagramIcon from "../assets/icons/instagram.svg";
 
 const Contact = () => {
-  const handleSubmit = (event) => {
+  // Die Funktion zum Absenden der Nachricht
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    alert("Nachricht erfolgreich gesendet!");
+    
+    // Formulardaten sammeln
+    const formData = new FormData(event.target);
+    const formDataObj = {};
+    formData.forEach((value, key) => {
+      formDataObj[key] = value;
+    });
+
+    // POST-Anfrage an das Backend
+    try {
+      const response = await fetch('http://localhost:5000/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formDataObj),
+      });
+
+      if (response.ok) {
+        alert("Nachricht erfolgreich gesendet!");
+        event.target.reset(); // Formular zurücksetzen
+      } else {
+        alert("Fehler beim Senden der Nachricht.");
+      }
+    } catch (error) {
+      console.error("Fehler:", error);
+      alert("Es gab einen Fehler beim Senden der Nachricht.");
+    }
   };
 
   return (

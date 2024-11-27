@@ -1,26 +1,28 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000; // Dynamischer Port für Render und lokale Entwicklung
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json()); // Verwendet die integrierte JSON Middleware von Express
 
 // MongoDB-Verbindung
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => console.log("MongoDB verbunden"))
-  .catch((err) => console.error("MongoDB-Verbindung fehlgeschlagen:", err));
+  .catch((err) => {
+    console.error("MongoDB-Verbindung fehlgeschlagen:", err);
+    process.exit(1); // Server stoppen, wenn die Verbindung zur DB fehlschlägt
+  });
 
 // Schema und Modell für Nachrichten
 const messageSchema = new mongoose.Schema({
-  firstname: { type: String, required: true },
   lastname: { type: String, required: true },
+  firstname: { type: String, required: true },
   email: { type: String, required: true },
   phone: { type: String },
   subject: { type: String, required: true },

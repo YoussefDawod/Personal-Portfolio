@@ -1,0 +1,103 @@
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: var(--sec-bg-color);
+  transition: background-color 1s ease, color 1s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-button {
+  z-index: 1;
+  border: none;
+  background-color:rgba(255, 0, 0, 0);
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+.toggle-button.button-open {
+  left: 260px;
+}
+
+.toggle-button .right-arrow,
+.toggle-button .left-arrow {
+  stroke-width: 20;
+}
+
+.mode-toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mode-toggle-button {
+  border: none;
+  background-color: var(--sec-bg-color);
+  color: var(--ter-color);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.mode-toggle-button.active {
+  background-color: var(--ter-bg-color);
+  color: var(--hover-color);
+  border-radius: 0 0 50px 50px;
+  cursor: not-allowed;
+}
+
+.mode-toggle-button:disabled {
+  cursor: auto;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  border-bottom: 1px solid var(--ter-bg-color);
+}
+
+header nav ul li a {
+  color: var(--ter-color);
+  text-decoration: none;
+  transition: var(--transition);
+  padding: 1rem 0 0 0.5rem;
+  display: block;
+}
+
+header nav ul li a:hover {
+  color: var(--hover-color);
+  background-color: var(--ter-bg-color);
+  transform: translateY(3px);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+footer p {
+  margin-top: 1rem;
+  color: var(--sec-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 740px) {
+  header {
+    width: 175px;
+  }
+
+  .toggle-button.button-open {
+    left: 180px;
+  }
+}

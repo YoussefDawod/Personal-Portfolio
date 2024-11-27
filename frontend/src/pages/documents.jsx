@@ -5,7 +5,6 @@ const Documents = () => {
     <div className="documents">
       <h2>Documente</h2>
       <p>Documente.</p>
-      <img src="/src/assets/images/tia.png" alt="" />
     </div>
   );
 };  

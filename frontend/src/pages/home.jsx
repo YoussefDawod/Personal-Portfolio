@@ -28,8 +28,7 @@ const Home = () => {
 
   const handlePrevClick = () => {
     const prevIndex =
-      (currentImageIndex - 1 + imagesWithTitles.length) %
-      imagesWithTitles.length;
+      (currentImageIndex - 1 + imagesWithTitles.length) % imagesWithTitles.length;
     changeImage(prevIndex);
   };
 
@@ -106,7 +105,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/html-5.svg"
+              src="/assets/icons/html-5.svg"
               alt="HTML5"
             />
             HTML5
@@ -114,7 +113,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/css-3.svg"
+              src="/assets/icons/css-3.svg"
               alt="CSS3"
             />
             CSS3
@@ -122,7 +121,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/scss.svg"
+              src="/assets/icons/scss.svg"
               alt="SASS"
             />
             SASS
@@ -130,7 +129,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/tailwind-css.svg"
+              src="/assets/icons/tailwind-css.svg"
               alt="Tailwind"
             />
             Tailwind
@@ -138,7 +137,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/bootstrap.svg"
+              src="/assets/icons/bootstrap.svg"
               alt="Bootstrap"
             />
             Bootstrap
@@ -146,7 +145,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/javascript.svg"
+              src="/assets/icons/javascript.svg"
               alt="JavaScript"
             />
             JavaScript
@@ -154,7 +153,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/react.svg"
+              src="/assets/icons/react.svg"
               alt="React"
             />
             React
@@ -162,7 +161,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/vite.svg"
+              src="/assets/icons/vite.svg"
               alt="Vite"
             />
             Vite
@@ -170,7 +169,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/node-js.svg"
+              src="/assets/icons/node-js.svg"
               alt="Node.js"
             />
             Node.js
@@ -178,7 +177,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/mongodb.svg"
+              src="/assets/icons/mongodb.svg"
               alt="MongoDB"
             />
             MongoDB
@@ -186,7 +185,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/rest-api.svg"
+              src="/assets/icons/rest-api.svg"
               alt="Rest API"
             />
             Rest API
@@ -194,7 +193,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/git.svg"
+              src="/assets/icons/git.svg"
               alt="Git"
             />
             Git
@@ -202,7 +201,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/terminal.svg"
+              src="/assets/icons/terminal.svg"
               alt="Terminal"
             />
             Terminal
@@ -210,7 +209,7 @@ const Home = () => {
           <div className="knowledge">
             <img
               className="knowledge-img"
-              src="/src/assets/icons/corel-draw.svg"
+              src="/assets/icons/corel-draw.svg"
               alt="Corel Draw"
             />
             Corel Draw

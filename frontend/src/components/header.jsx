@@ -34,11 +34,11 @@ const Header = () => {
       <button className={`toggle-button ${isOpen ? 'button-open' : ''}`} onClick={toggleHeader}>
         {isOpen ? (
           <svg className="icon left-arrow">
-            <use href="/src/assets/icons/left-arrow.svg#left-arrow" />
+            <use href="/assets/icons/left-arrow.svg#left-arrow" />
           </svg>
         ) : (
           <svg className="icon right-arrow">
-            <use href="/src/assets/icons/right-arrow.svg#right-arrow" />
+            <use href="/assets/icons/right-arrow.svg#right-arrow" />
           </svg>
         )}
       </button>
@@ -52,7 +52,7 @@ const Header = () => {
               disabled={isDarkMode}
             >
               <svg className="icon dark-mode">
-                <use href="/src/assets/icons/dark-mode.svg#dark-mode" />
+                <use href="/assets/icons/dark-mode.svg#dark-mode" />
               </svg>
             </button>
             <button
@@ -61,7 +61,7 @@ const Header = () => {
               disabled={!isDarkMode}
             >
               <svg className="icon light-mode">
-                <use href="/src/assets/icons/light-mode.svg#light-mode" />
+                <use href="assets/icons/light-mode.svg#light-mode" />
               </svg>
             </button>
           </div>

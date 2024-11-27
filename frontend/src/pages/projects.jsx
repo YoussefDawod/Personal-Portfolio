@@ -12,8 +12,8 @@ export const projectsData = [
       " Das Ziel war, ein modernes und ansprechendes Design zu schaffen, das einfach zu bedienen ist und die Idee eines Restaurantauftritts gut widerspiegelt.",
     ],
     images: [
-      "/src/assets/images/kitchen-1.png",
-      "/src/assets/images/kitchen-2.png",
+      "/assets/images/kitchen-1.png",
+      "/assets/images/kitchen-2.png",
     ],
   },
   {
@@ -25,8 +25,8 @@ export const projectsData = [
       " Das Ziel ist es, eine benutzerfreundliche Plattform für Kochinspirationen zu schaffen.",
     ],
     images: [
-      "/src/assets/images/rezeptSuche-1.png",
-      "/src/assets/images/rezeptSuche-2.png",
+      "/assets/images/rezeptSuche-1.png",
+      "/assets/images/rezeptSuche-2.png",
     ],
   },
   {
@@ -39,7 +39,7 @@ export const projectsData = [
       " Ein einzigartiges Spielerlebnis, das Technologie und Kreativität verbindet.",
       " Das Projekt ist aktuell nur lokal verfügbar und wird noch nicht online gehostet.",
     ],
-    images: ["/src/assets/images/tia.png", "/src/assets/images/tia-2.png"],
+    images: ["/assets/images/tia.png", "/assets/images/tia-2.png"],
   },
 ];
 

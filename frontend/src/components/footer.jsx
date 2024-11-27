@@ -1,7 +1,7 @@
 import "../styles/header-footer.css";
-import GitHubIcon from "../assets/icons/github.svg";
-import LinkedInIcon from "../assets/icons/linkedin.svg";
-import InstagramIcon from "../assets/icons/instagram.svg";
+import GitHubIcon from "/assets/icons/github.svg";
+import LinkedInIcon from "/assets/icons/linkedin.svg";
+import InstagramIcon from "/assets/icons/instagram.svg";
 
 const Footer = () => {
   return (

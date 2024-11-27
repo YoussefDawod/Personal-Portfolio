@@ -1,7 +1,7 @@
 import "../styles/contact.css";
-import GitHubIcon from "../assets/icons/github.svg";
-import LinkedInIcon from "../assets/icons/linkedin.svg";
-import InstagramIcon from "../assets/icons/instagram.svg";
+import GitHubIcon from "/assets/icons/github.svg";
+import LinkedInIcon from "/assets/icons/linkedin.svg";
+import InstagramIcon from "/assets/icons/instagram.svg";
 
 const Contact = () => {
   // Die Funktion zum Absenden der Nachricht
@@ -17,7 +17,7 @@ const Contact = () => {
 
     // POST-Anfrage an das Backend
     try {
-      const response = await fetch('http://localhost:5000/send', {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/send`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

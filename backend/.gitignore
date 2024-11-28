@@ -1,6 +1,9 @@
 # Umgebungsvariablen-Dateien
 .env
 
+# Private Dateien
+private/
+
 # Node.js Abhängigkeiten
 node_modules/
 

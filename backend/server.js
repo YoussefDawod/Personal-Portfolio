@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
+const documentsRouter = require("./documents"); // Importiere den Dokumenten-Router
 
 const app = express();
 const PORT = process.env.PORT || 5000; // Dynamischer Port für Render und lokale Entwicklung
@@ -56,6 +57,9 @@ app.post("/send", async (req, res) => {
     res.status(500).json({ error: "Nachricht konnte nicht gespeichert werden." });
   }
 });
+
+// Füge den Dokumentenrouter hinzu
+app.use("/api/documents", documentsRouter);
 
 // Server starten
 app.listen(PORT, () => {

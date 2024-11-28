@@ -4,7 +4,6 @@ const Documents = () => {
   return (
     <div className="documents">
       <h2>Documente</h2>
-      <p>Documente.</p>
     </div>
   );
 };  

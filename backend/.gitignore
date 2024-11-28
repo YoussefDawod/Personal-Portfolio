@@ -4,6 +4,9 @@
 # Private Dateien
 private/
 
+# Ignoriere die ZIP-Datei
+private.zip
+
 # Node.js Abhängigkeiten
 node_modules/
 
